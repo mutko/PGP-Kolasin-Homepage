@@ -1,0 +1,123 @@
+body {
+	background: #333;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', 'Book Antiqua', Arial, serif;
+}
+h1 {
+	font-weight: 400;
+	margin: 0;
+	padding-top: 200px; 
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.side-left,
+.side-right {
+	width: 100%;
+	height: 500px;
+	display: block;
+	text-align: center;
+}
+.side-left {
+	background: url(../img/gradjevina-bg.jpg) no-repeat;
+	background-size: cover;
+}
+.side-right {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.kolasin {
+	font-weight: bold;
+	color: #ff9306;
+}
+
+@media only screen and (min-width: 460px) {
+	html, body, .container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	body {
+		background: #333;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	.splitlayout {
+		position: relative;
+		min-height: 100%;
+		width: 100%;
+	}
+	.side-left {
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 50%;
+		height: 100%;
+		color: #fff;
+	}
+	.side-right {
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		width: 50%;
+		height: 100%;
+	}
+	.intro-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+		transform: translateY(-50%) translateX(-50%);
+	}
+	h1 {
+		font-size: 1.4em;
+		padding: 0;
+	}
+	.kolasin {
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+} /* end of media query min 460px */
+
+@media only screen and (min-width: 720px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	.kolasin {
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+	.intro-content {
+		position: relative;
+	}
+	.overlay {
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	    background-color:rgba(0, 0, 0, 0);
+	    z-index:9999;
+	}
+	.overlay:hover {
+		background-color:rgba(0, 0, 0, .3);
+	}
+}/* end of media query min 720px */
+
+@media only screen and (min-width: 1120px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	.kolasin {
+		font-size: 2em;
+	}
+} /* end of media query min 1120px */
